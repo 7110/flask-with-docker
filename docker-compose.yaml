@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  app:
+    container_name: flask-with-docker
+    build: .
+    volumes:
+      - ./app:/usr/src/app
+    ports:
+      - 8200:5000
+    command: flask run --host=0.0.0.0
+    environment:
+      FLASK_DEBUG: "on"
+      FLASK_APP: ./app.py
