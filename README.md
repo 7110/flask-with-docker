@@ -23,3 +23,10 @@ docker-compose up -d
 ```
 
 URL: [http://localhost:8200/](http://localhost:8200/)
+
+## usage
+
+### POST
+
+headers: `Content-type: application/json`
+body: `{}`
